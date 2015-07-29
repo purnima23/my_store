@@ -1,2 +1,10 @@
 == README
 If you were to follow the spree's documentation is would be such a pain. Hence, I have done the necessary set up on this repo and you could just clone it and run this comments :-
+  - Once you have bundle install  to run the app, you need to run this commands
+      - rails generate spree:install
+          This will run the spree generator using the version of Spree you have defined in your Gemfile. Running               spree install with a custom source or build will generate an error as your Gemfile will be amended to                require different versions of Spree.
+      - rake spree_auth:admin:create
+        creates admin login.
+        tips :- setup your devise's secret key at config/initializers/devise.rb . Create a new devise.rb if you don't         have any.
+Once you have understand how on earth the flow works, you may customise to your liking. 
+
